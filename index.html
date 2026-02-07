@@ -3,47 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temu | Пакет купонів 4 000₴</title>
+    <title>Temu UA | Бонус 4 000₴ активовано</title>
     <style>
-        body { font-family: 'Helvetica', sans-serif; background: #ff6000; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; color: #fff; }
-        .container { width: 90%; max-width: 450px; background: #fff; color: #333; border-radius: 25px; padding: 30px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
-        .logo { width: 120px; margin-bottom: 20px; }
-        h1 { font-size: 24px; margin-bottom: 10px; color: #ff6000; }
-        .offer { background: #fff3ed; border: 2px dashed #ff6000; padding: 15px; border-radius: 15px; margin: 20px 0; }
-        .price { font-size: 42px; font-weight: bold; color: #ff6000; }
-        .code-box { background: #eee; padding: 10px; border-radius: 10px; font-weight: bold; font-size: 20px; letter-spacing: 2px; cursor: pointer; position: relative; }
-        .btn { display: block; background: #ff6000; color: #fff; text-decoration: none; padding: 18px; border-radius: 50px; font-size: 18px; font-weight: bold; margin-top: 20px; transition: 0.3s; animation: pulse 1.5s infinite; }
-        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
-        .copy-hint { font-size: 12px; color: #888; margin-top: 5px; }
+        body { font-family: 'Helvetica', sans-serif; background: #ff6000; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .card { width: 90%; max-width: 400px; background: #fff; border-radius: 30px; padding: 25px; text-align: center; box-shadow: 0 15px 35px rgba(0,0,0,0.3); }
+        .logo { width: 100px; margin-bottom: 15px; }
+        h1 { color: #333; font-size: 22px; margin-bottom: 5px; }
+        .bonus-amount { font-size: 48px; font-weight: bold; color: #ff6000; margin: 10px 0; }
+        .desc { color: #666; font-size: 14px; margin-bottom: 20px; }
+        .code-area { background: #f7f7f7; border: 2px dashed #ff6000; padding: 15px; border-radius: 15px; cursor: pointer; transition: 0.2s; }
+        .code-area:active { transform: scale(0.95); }
+        .code { font-size: 24px; font-weight: bold; color: #333; letter-spacing: 2px; }
+        .btn { display: block; background: #ff6000; color: #fff; text-decoration: none; padding: 18px; border-radius: 50px; font-size: 18px; font-weight: bold; margin-top: 25px; box-shadow: 0 4px 15px rgba(255, 96, 0, 0.4); }
+        .footer-text { font-size: 11px; color: #aaa; margin-top: 15px; }
     </style>
 </head>
 <body>
 
-<div class="container">
+<div class="card">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Temu_logo.svg/1200px-Temu_logo.svg.png" class="logo">
-    <h1>Твій ексклюзивний бонус!</h1>
+    <h1>Вітаємо! 🎉</h1>
+    <p class="desc">Вам нараховано пакет купонів:</p>
     
-    <div class="offer">
-        <div class="price">4 000₴</div>
-        <p>Пакет купонів + 30% знижки</p>
+    <div class="bonus-amount">4 000₴</div>
+    
+    <div class="code-area" onclick="copyCode()">
+        <div class="code">ali374021</div>
+        <div id="copy-status" style="font-size: 12px; color: #ff6000; margin-top: 5px;">Натисніть, щоб скопіювати код</div>
     </div>
 
-    <p>Натисни на код, щоб скопіювати:</p>
-    <div class="code-box" onclick="copyCode()">
-        ali374021
-    </div>
-    <div class="copy-hint" id="hint">Натисни, щоб копіювати</div>
-
-    <a href="https://temu.to/k/ermuab7o1vr" class="btn" onclick="copyCode()">ЗАБРАТИ БОНУС</a>
+    <a href="https://temu.to/k/eml9e31f5sd" class="btn" onclick="copyCode()">ОТРИМАТИ ЗАРАЗ</a>
     
-    <p style="font-size: 12px; margin-top: 20px; color: #999;">*Тільки для нових користувачів додатку Temu</p>
+    <p class="footer-text">Акція діє обмежений час для нових користувачів застосунку</p>
 </div>
 
 <script>
     function copyCode() {
         navigator.clipboard.writeText("ali374021");
-        document.getElementById('hint').innerText = "✅ КОД СКОПІЙОВАНО!";
-        document.getElementById('hint').style.color = "green";
+        const status = document.getElementById('copy-status');
+        status.innerText = "✅ КОД СКОПІЙОВАНО! ВСТАВТЕ ЙОГО В ПОШУК ТЕМU";
+        status.style.fontWeight = "bold";
     }
 </script>
 
