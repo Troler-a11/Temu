@@ -9,39 +9,30 @@
     <title>Temu UA | Купони на 4000₴ та Знижки 2026</title>
 
     <meta name="description" content="Отримайте пакет купонів Temu на 4000 грн та знижку 30% за промокодом ali374021. Тільки для нових користувачів в Україні.">
-    <meta name="keywords" content="тему купони, temu знижки, промокод temu 2026, temu безкоштовні товари, халява тему україна, пакет купонів 4000 грн, temu акції, замовити в тему зі знижкою, промокод ali374021, безкоштовна доставка тему, товари за 0 грн temu, temu промокод на перше замовлення, купони на одяг тему, temu реєстрація бонус, виплати тему, партнерка temu, як отримати знижку в тему, робочі коди temu, акційні пропозиції тему, купони на техніку тему">
+    <meta name="keywords" content="тему купони, temu знижки, промокод тему 2026, temu безкоштовні товари, халява тему україна, пакет купонів 4000 грн, temu акції, замовити в тему зі знижкою, промокод ali374021, безкоштовна доставка тему, товари за 0 грн temu, temu промокод на перше замовлення, купони на одяг тему, temu реєстрація бонус, виплати тему, партнерка temu, як отримати знижку в тему, робочі коди temu, акційні пропозиції тему, купони на техніку тему">
     
     <style>
         :root { --temu-orange: #ff6000; --bg-gray: #f4f4f7; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-gray); margin: 0; color: #333; }
-        
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-gray); margin: 0; color: #333; overflow-x: hidden; }
         .nav { background: #fff; padding: 15px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         .logo { width: 100px; }
-        
         .hero { background: white; margin: 15px auto; max-width: 450px; border-radius: 25px; padding: 25px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        
         .timer { color: #d00; font-weight: bold; margin-bottom: 10px; font-size: 14px; background: #fff0f0; display: inline-block; padding: 5px 15px; border-radius: 20px; }
         .main-title { font-size: 24px; font-weight: 800; margin: 10px 0; color: #222; }
-        
         .coupon-card { background: linear-gradient(135deg, #fff3ed 0%, #ffe0d1 100%); border: 2px dashed var(--temu-orange); border-radius: 20px; padding: 20px; margin: 20px 0; }
         .amount { font-size: 48px; font-weight: 900; color: var(--temu-orange); line-height: 1; }
-        
         .steps { text-align: left; margin: 25px 0; font-size: 15px; color: #555; }
         .step { margin-bottom: 12px; display: flex; align-items: center; }
         .step-num { background: var(--temu-orange); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; font-weight: bold; font-size: 12px; flex-shrink: 0; }
-
         .code-box { background: #222; color: white; padding: 18px; border-radius: 15px; font-size: 24px; font-weight: bold; letter-spacing: 3px; position: relative; cursor: pointer; transition: 0.3s; margin: 15px 0; }
-        .code-box:hover { background: #000; transform: scale(1.02); }
+        .code-box:hover { background: #000; }
         .copy-badge { position: absolute; top: -10px; right: -10px; background: #28a745; color: white; font-size: 11px; padding: 5px 10px; border-radius: 8px; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
-
         .btn-main { display: block; background: var(--temu-orange); color: white; text-decoration: none; padding: 20px; border-radius: 50px; font-size: 20px; font-weight: bold; margin-top: 20px; transition: 0.3s; box-shadow: 0 6px 20px rgba(255, 96, 0, 0.4); animation: pulse 1.5s infinite; }
-        
         @keyframes pulse {
-            0% { transform: scale(1); box-shadow: 0 6px 20px rgba(255, 96, 0, 0.4); }
-            50% { transform: scale(1.05); box-shadow: 0 6px 30px rgba(255, 96, 0, 0.6); }
-            100% { transform: scale(1); box-shadow: 0 6px 20px rgba(255, 96, 0, 0.4); }
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
-
         .footer { padding: 20px; text-align: center; font-size: 12px; color: #999; line-height: 1.6; }
     </style>
 </head>
@@ -76,8 +67,8 @@
 </div>
 
 <div class="footer">
-    © 2026 Temu Coupons UA. Всі права захищені. <br>
-    Ключові запити: тему купони, temu знижки, промокод temu 2026, безкоштовні товари, халява тему.
+    © 2026 Temu Coupons UA. <br>
+    Ключові запити: тему купони, temu знижки, промокод temu 2026, безкоштовні товари.
 </div>
 
 <script>
@@ -88,16 +79,14 @@
         setTimeout(() => { badge.style.display = 'none'; }, 2500);
     }
 
-    // Таймер зворотного відліку
     let time = 3600; 
-    const timerElement = document.getElementById('timer');
     setInterval(() => {
         time--;
         if (time < 0) time = 3600;
         let h = Math.floor(time / 3600);
         let m = Math.floor((time % 3600) / 60);
         let s = time % 60;
-        timerElement.innerText = `До кінця акції: 0${h}:${m < 10 ? '0'+m : m}:${s < 10 ? '0'+s : s}`;
+        document.getElementById('timer').innerText = `До кінця акції: 0${h}:${m < 10 ? '0'+m : m}:${s < 10 ? '0'+s : s}`;
     }, 1000);
 </script>
 
